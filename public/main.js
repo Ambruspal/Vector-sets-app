@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\phaal\Documents\Teszt projektek\probafeladat-klaszterezo-app\frontend\cluster-test\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\phaal\Documents\Saját projektek\Vector-sets-app\frontend\cluster-test\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -155,7 +155,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    apiUrl: 'http://localhost:3000/api/',
+    apiUrl: '/api/',
 };
 /*
  * For easier debugging in development mode, you can import the following file

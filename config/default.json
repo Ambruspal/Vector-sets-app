@@ -1,0 +1,14 @@
+{
+    "database": {
+        "dbType": "mongodb+srv://",
+        "dbUser": "ambrus-pal:",
+        "dbPassword": "ambrus-pal",
+        "dbHost": "@cluster1.4bjqt.mongodb.net/vector-db?retryWrites=true&w=majority"
+    },
+    "devDatabase": {
+        "dbType": "mongodb://",
+        "dbUser": "",
+        "dbPassword": "",
+        "dbHost": "127.0.0.1:27017/vector-database"
+    }
+}
