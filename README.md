@@ -7,8 +7,8 @@
 - Run it on `http://localhost:3000`.
 - Stop the app: `npm run docker:down`
 
-## 2. Some details
+## 2. The functioning of the application
 
 The app has been created with angular on the frontend and with node.js express on the backend.
-Since it runs with docker compose, the FE has been built under the server as a static file, therefore they both run in the same container.
-The app uses mongoDB database, which runs in a different container and ofcourse they communicate with each other.
+Since it runs via docker compose, the frontend has been built under the backend as a static file.
+Therefore the server (with the static frontend) runs in a docker container, connecting to a local mongoDB database which runs in another docker container.
