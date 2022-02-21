@@ -1,0 +1,85 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 21.5% 78.5%;
+}
+
+.parameter-section {
+    padding: 4.5rem 2rem;
+}
+
+.parameter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+
+.parameter {
+    display: flex;
+    align-items: center;
+    font-size: 1.65rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    border: 0.1rem solid grey;
+}
+
+.parameter input {
+    width: 28%;
+    height: 3.3rem;
+    margin-left: auto;
+    text-align: center;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.embedding-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    gap: 2rem;
+    padding: 5rem 2rem 4rem 6rem;
+}
+
+.generated-values-wrapper,
+.chosen-values-wrapper {
+    background-color: rgb(241, 238, 238);
+    padding: 0.5rem;
+    border: 0.1rem solid grey;
+    border-radius: 0.5rem;
+}
+
+.generated-values-wrapper {
+    min-width: 20rem;
+    max-height: 3.1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.initial-groups-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-left: 8rem;
+    margin-top: 1rem;
+}
+
+.group-container {
+    min-width: 25rem;
+    padding: 2rem 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 0.1rem solid #000;
+    border-radius: 1.2rem;
+}
+
+.chosen-values-wrapper {
+    min-width: 20rem;
+    margin: 1rem auto 0 auto;
+}

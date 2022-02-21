@@ -1,0 +1,30 @@
+.container {
+    padding: 3rem;
+}
+
+.results-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+}
+
+.group-container {
+    min-width: 25rem;
+    margin-top: 4rem;
+    padding: 2rem 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 0.1rem solid #000;
+    border-radius: 1.2rem;
+}
+
+.values-wrapper {
+    background-color: rgb(241, 238, 238);
+    min-width: 95%;
+    padding: 0.5rem;
+    margin: 1rem auto 0 auto;
+    border: 0.1rem solid grey;
+    border-radius: 0.5rem;
+}

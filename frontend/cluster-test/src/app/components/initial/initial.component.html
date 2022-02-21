@@ -1,0 +1,50 @@
+<section class="container">
+
+    <section class="parameter-section">
+        <form class="parameter-container" [formGroup]="parametersForm" (ngSubmit)="generateGroupsAndEmbeddings()">
+            <div class="parameter">
+                <label for="seed">Random seed</label>
+                <input type="text" id="seed" formControlName="seed">
+            </div>
+            <div class="parameter">
+                <label for="embedding-number">Number of<br>embeddings</label>
+                <input type="text" id="embedding-number" formControlName="embeddingNumber">
+            </div>
+            <div class="parameter">
+                <label for="embedding-length">Length of<br>embeddings</label>
+                <input type="text" id="embedding-length" formControlName="embeddingLength">
+            </div>
+            <div class="parameter">
+                <label for="vector-group-number">Number of<br>vector-sets</label>
+                <input type="text" id="vector-group-number" formControlName="groupNumber">
+            </div>
+            <div class="parameter">
+                <label for="threshold">Threshold value</label>
+                <input type="text" id="threshold" formControlName="threshold">
+            </div>
+            <div class="buttons-wrapper">
+                <button mat-raised-button *ngIf="!resetMode" type="submit" [disabled]="!parametersForm.valid">Generate
+                    embeddings</button>
+                <button mat-raised-button *ngIf="resetMode" type="submit" [disabled]="!parametersForm.valid">Reset</button>
+                <button mat-raised-button type="button" [disabled]="!isDataValid || !resetMode" (click)="sendData()">Save data</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="drop-lists-section" cdkDropListGroup>
+        <section class="embedding-section" cdkDropList [cdkDropListData]="embeddingList" (cdkDropListDropped)="drop($event)">
+            <div class="generated-values-wrapper" *ngFor="let numberList of embeddingList" cdkDrag>
+                <span *ngFor="let number of numberList">{{number}}&emsp;</span>
+            </div>
+        </section>
+        <section class="initial-groups-section">
+            <div class="group-container" *ngFor="let key of groupNames" cdkDropList [cdkDropListData]="dataToSend[key]" (cdkDropListDropped)="drop($event)">
+                <p>{{key}}</p>
+                <div class="chosen-values-wrapper" *ngFor="let numberList of dataToSend[key]" cdkDrag>
+                    <span *ngFor="let number of numberList">{{number}}&emsp;</span>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</section>
