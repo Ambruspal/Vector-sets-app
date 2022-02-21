@@ -1,3 +1,5 @@
+On heroku: https://vectors-app.herokuapp.com/
+
 ## 1. Start the application
 
 - Docker needed to run the app: https://docs.docker.com/get-docker/ (docker compose will be automatically installed)
